@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800|Poppins:300,400,500,700,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8e8e8;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* Header component styling */
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 0px #eeeeee;
+  z-index: 1;
+}
+
+.header-row {
+  display: flex;
+  width: 80%;
+  margin: auto !important;
+  height: 10vh;
+  align-items: center;
+}
+
+/* .logo-container {
+  flex: 1;
+} */
+
+nav {
+  /* flex: 2; */
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+.nav-btn {
+  display: none;
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: #333333;
+  font-size: 18px;
+}
+
+/* About componenet styling */
+#about {
+  margin-top: 70px;
+}
+
+/* .about-left img {
+  width: 83%;
+} */
+
+.about-left {
+  background: url('./img/mayank-portfolio.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+
+}
+
+.about-right p:first-child {
+  letter-spacing: 2px;
+  color: #797979;
+}
+
+.about-me-text p::after {
+  content: "";
+  display: inline-block;
+  height: 0px;
+  width: 60px;
+  margin-left: 20px;
+  background-color: #FBBAD6;
+  box-shadow: 0px -6px 7px 5px #FBBAD6;
+}
+
+.btn-custom {
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background: linear-gradient(to left, #0072ff, #00c6ff);
+}
+
+#social img {
+  display: inline-block;
+  width: 36px;
+  margin-right: 15px;
+}
+
+#social img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+ /* Experience componenet styling */
+.card {
+  border: 0px !important;
+  box-shadow: 0 4px 8px #eeeeee;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px #eeeeee;
+  transform: scale(1.03);
+  transition: 0.3s all ease-in-out;
+
+}
+
+.card-text p {
+  margin-bottom: 0px;
+}
+
+.card-details {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#experience {
+  padding: 100px 0 100px 0;
+  background-color: #fafafa;
+}
+
+/* Footer component styling */
+#footer {
+  background-color: black;
+  color: #ffffff;
+}
+
+#footer .row {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footerMenu li{
+  display: inline-block;
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footerMenu a {
+  color: #ffffff !important;
+}
+
+.footerMenu a:hover {
+  color: #008FFF !important;
+  text-decoration-line: none !important;
+}
+
+.footer-social {
+  margin-bottom: 30px;
+}
+
+.footer-social i {
+  padding: 15px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.footer-social i:hover {
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  color: #ffffff;
+}
+
+.footer-social .fa-facebook-f {
+  padding: 15px 18px 15px 18px;
+}
+
+.copyright .fa-heart {
+  color: red;
+}
+
+#binding {
+  margin: 100px auto;
+}
+
+#binding2 {
+  margin: 100px auto;
+}
+
+.binding2 {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+  #social img {
+    width: 28px;
+  }
+
+  .download-cv-btn a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* .logo-container {
+    justify-content: space-around;
+    flex: none;
+  } 
+  
+  .header nav {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .show-nav {
+    height: 100vh;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin: auto;
+  } */
+
+  /* .nav-link {
+    margin: auto;
+  }
+
+  .header-row {
+    width: 100%;
+  } */
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .about-left-img {
+    margin-bottom: 50px;
+  }
+
+  .about-left img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .download-cv .col-6 {
+    text-align: left;
+  }
+
+  .download-cv-btn a {
+    font-size: 12px;
+  }
+
+  .about-left-img {
+    margin-bottom: 80px;
+  }
+
+  .about-left img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .download-cv-btn a {
+    font-size: 16px;
+  }
+
+  .about-left img {
+    width: 83%;
+  }
+
+  .about-left-img {
+    margin-bottom: 0px;
+  }
+}
